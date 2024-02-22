@@ -1,0 +1,9 @@
+from zeep import Client​
+
+
+client = Client('http://LUT hospital.com/patientService')​
+
+patient_info = client.service.getPatientInfo(patient_id=12345)​
+​
+
+print(patient_info)​
